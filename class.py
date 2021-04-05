@@ -1,26 +1,25 @@
-class Car(object):
+class bank(object):
 
-    def __init__(self,model,colour,company,speed_limit):
-        self.color = colour
-        self.model = model
-        self.company = company
-        self.speed_limit = speed_limit
+    def __init__(self,cash_withdrawal,Balance_Enquiry):
+        self.cash_withdrawal = cash_withdrawal
+        self.Balance_Enquiry = Balance_Enquiry
+
 
     def start(self):
-        print("Started")
+        print("Enter atm card...")
 
-    def stop(self):
-        print("Stoped")
+    def pin(self):
+        print("pin")
 
-    def accelerate(self):
-        print("Accelerating...")
-        "accelerated functionality here"
+    def transactionType(self):
+        print("TransactionType")
+        "Transaction related functionality here"
     
-    def change_gear(self,gear_type):
-        print("Gear changed")
-        "gear related functionality here"
+    def WithdrawalAmount(self,WithdrawalAmount):
+        print("WithdrawalAmount")
+        "Withdrawal Amount"
 
 
-audi = Car("A6","red","audi","80")
+atm = bank(1000,28000)
 
-print(audi.color)
+print(atm)
